@@ -1,0 +1,14 @@
+{
+  "name": "employee-portal-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Custom Employee Portal with Zoho One Integration",
+  "scripts": {
+    "setup:backend": "cd backend && npm install && npx prisma db push && node prisma/seed.js",
+    "setup:frontend": "cd frontend && npm install",
+    "setup": "npm run setup:backend && npm run setup:frontend",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run dev",
+    "seed": "cd backend && node prisma/seed.js"
+  }
+}
